@@ -25,8 +25,7 @@ export default function Dashboard(): JSX.Element {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const API_URL = "http://localhost:5000/api/monitors";
-
+  const API_URL = "https://onrender.com";
   // Fetch all monitors from backend API
   const fetchMonitors = async (): Promise<void> => {
     try {
