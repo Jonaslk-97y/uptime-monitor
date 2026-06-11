@@ -1,0 +1,22 @@
+# Secret Keys & Environment Variables (Crucial for Security)
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# Dependency Packages (Keeps repository size small)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Production Build Directories
+frontend/dist/
+frontend/build/
+
+# Local Operating System Files
+.DS_Store
+Thumbs.db
+
+# TypeScript Build & Cache Records
+*.tsbuildinfo
+.eslintcache
