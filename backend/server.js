@@ -9,7 +9,13 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+// Replace your old app.use(cors()); with this configuration:
+app.use(cors({
+  origin: '*', // Allows any deployed frontend domain to fetch data securely
+  methods: ['GET', 'POST', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}));
+
 app.use(express.json());
 
 app.use('/api/monitors', monitorRoutes);
